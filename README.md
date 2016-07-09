@@ -3,7 +3,10 @@ Bidi
 
 Mediator for "[Meglytics](https://www.meglytics.com)".
 
-## `Analyze with Meglytics` - Cloud  edition [http://www.meglytics.com](https://www.meglytics.com)
+[What is bidi or beedi ? Just kidding ](https://deshlai.files.wordpress.com/2011/11/jang3.jpg)
+
+
+## Analyze with Meglytics - Cloud  edition [http://www.meglytics.com](https://www.meglytics.com)
 `Coming shortly`
 
 The opensource gateway (drab name), api connector that protects RESTful resources using [HMAC](http://www.ietf.org/rfc/rfc2104.txt) based authorization.
