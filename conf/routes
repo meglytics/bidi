@@ -1,0 +1,34 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Map static resources from the /public folder to the /public path
+GET    /assets/*file                    controllers.Assets.at(path="/public", file)
+
+# Home page, static routes
+GET    /                                controllers.Application.index
+
+# Account
+POST   /v2/accounts/content             controllers.Accounts.post
+GET    /v2/accounts/:id                 controllers.Accounts.show(id: String)
+POST   /v2/accounts/update       	 	    controllers.Accounts.update
+GET    /v2/accounts/login               controllers.Accounts.login
+
+#Organizations
+POST   /v2/organizations/content        controllers.team.Organizations.post
+POST   /v2/organizations/update         controllers.team.Organizations.update
+GET    /v2/organizations/:id            controllers.team.Organizations.show(id: String)
+GET    /v2/organizations	              controllers.team.Organizations.list()
+
+#Domains
+POST   /v2/domains/content              controllers.team.Domains.post
+GET    /v2/domains/:id                  controllers.team.Domains.show(id: String)
+
+#Sparkjobs
+#POST   /v2/sparkjobs/content            controllers.analytics.Sparkjobs.post
+#GET    /v2/sparkjobs/:id                controllers.analytics.Sparkjobs.show(id: String)
+
+#Workbenches
+POST  /v2/workbenches/content           controllers.analytics.Workbenches.post
+POST  /v2/workbenches/execute           controllers.analytics.Workbenches.execute
+GET   /v2/workbenches/:name              controllers.analytics.Workbenches.show(name: String)
